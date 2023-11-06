@@ -18,6 +18,7 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/post', 'PostController@index');
+$router->get('/post/{id}', 'PostController@index_parameter');
 $router->post('/create', 'PostController@insert');
-$router->put('/post/{id}', 'PostController@update');
+$router->put('/post/update/{id}', 'PostController@update');
 $router->delete('/post/{id}', 'PostController@delete');
